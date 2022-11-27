@@ -456,25 +456,26 @@ Hola
 34. How Kotlin coroutines are better than RxKotlin/RxJava?
 35. How to implement Builder pattern in Kotlin?
 36. Imagine you moving your code from Java to Kotlin. How would you rewrite this code in Kotlin?
-37. What is The Billion Dollar Mistake?
+37. What is The Billion Dollars Mistake?
 38. What is the difference between * and Any in Kotlin generics?
 39. What is the difference between launch/join and async/await in Kotlin coroutines?
 
-## Coroutines Interview Questtions
+## Coroutines Interview Questions
+
 - What is Coroutines ?
-- Difference between Coroutines and  Thread ?
-- What is suspend function  in coroutines
+- Difference between Coroutines and Thread ?
+- What is Suspend function in coroutines
 - What is coroutine Launcher ?
-- what   is run blocking in coroutines
-- Difference between   delay  and  Thread.sleep ?
-- What  is  Scope in Coroutines ?
-- What  is Context in Coroutines ?
-- How to  combine the result of 2 couroutines result
+- what is run blocking in coroutines
+- Difference between delay()  and Thread.sleep() ?
+- What is Scope in Coroutines ?
+- What is Context in Coroutines ?
+- How to combine the result of 2 Coroutines result
 - Use of async and await in coroutines
 - What is Dispatcher
 - How to transfer the result from coroutines to main thread/ ui thread.
 - Exception handling in coroutines
-- What are Jobs in coroutines and  where it's used
+- What are Jobs in coroutines and where it's used
 - How to cancel a Coroutine
 - What is flow
 - How to create a flow

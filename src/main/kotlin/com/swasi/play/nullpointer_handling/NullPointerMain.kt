@@ -27,18 +27,18 @@ package com.swasi.play.nullpointer_handling
 object NullPointerMain {
     @JvmStatic
     fun main(args: Array<String>) {
-
         handleNullPointerUsingSafeCall()
         hanelNullPointerHandlingUsingAssertion()
         handleNullPointerUsingElvisOperator()
         handleNullPointerUsingElvisOperatorWithIfElse()
         handleNullPointerUsingLetOperator()
+        filterOutNullValue()
     }
 
 
     private fun handleNullPointerUsingSafeCall() {
         println("handleNullPointerUsingSafeCall")
-        var name: String? = null
+        val name: String? = null
         val length = name?.length
         println("Length of $name is $length")
 
@@ -86,7 +86,12 @@ object NullPointerMain {
         println(a?.length)
 
         val l = b?.length ?: -1
+        val l1 = b?.length ?: {
+            println("b is null")
+            -1
+        }
         print(l)
+        print(1)
     }
 
     private fun handleNullPointerUsingElvisOperatorWithIfElse() {
@@ -116,7 +121,11 @@ object NullPointerMain {
         println("Length of $name is $length")
     }
 
+    /**
+     * There are few ready-made methods to handle null in list
+     */
     fun filterOutNullValue() {
+        println("Filter out non null values")
         val nullableList: List<Int?> = listOf(1, 2, null, 4)
         val intList: List<Int> = nullableList.filterNotNull()
     }
