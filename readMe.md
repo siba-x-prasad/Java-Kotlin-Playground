@@ -1,30 +1,17 @@
 # Java Kotlin
 ## KOTLIN
+| [Link](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/links.md)                                         | [Introduction](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/1.introduction.md)                          | [Basics](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/2.basicsOFKotlin.md)        | [ControlStructure](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/3.controlStrcture.md)     |
+|------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| [Classes And Objects](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/4.classesAndObjects.md)            | [Higher Order Functions & Lambda](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/5.functionsAndLambda.md) | [Collections](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/6.collections.md)      | [Operators](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/8.operators.md)                  |
+| [Data Class](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/DataClass.md)                               | [Keywords & Use](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/KotlinKeywords.md)                        | [Null Safety](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/NullSafety.md)         | [Sealed Class](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/SealedClass.md)               |
+| [Asynchronous Programming](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/7.asynchronousProgramming.md) | [Coroutine Setup](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/7.coroutineSetup.md)                     | [Flow & Channels](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/flowAndChannel.md) | [Interview Questions](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/kotlin/interviewQuestions.md) |
 
+## JAVA
 
-
-## 1. [Kotlin](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Introduction](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Basics](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Control](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Class & Object](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Functions & Lambda](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Collections](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Coroutines](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Operators](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Data Class](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Sealed Class](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Null Safety](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-  - [Flow And Channel](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/CORE_JAVA.md)
-## 2. [Java](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/KOTLIN.md)
-  - [OOPS](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/KOTLIN.md)
-  - [Class & Object](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/ObjectAndClasses.md)
-  - [Interface](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Interface.md)
-  - [Abstraction](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Abstraction.md)
-  - [Inheritance](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Inheritance.md)
-  - [Polymorphism](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/KOTLIN.md)
-  - [Thread](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/KOTLIN.md)
-  - [Exception](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Exception.md)
-  - [Java 8](https://github.com/siba-x-prasad/INTERVIEW/blob/main/ReadMe/KOTLIN.md)
-  - [Misc](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Misc.md)
-  - [Oops Interview Questions](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/OopsInterviewQuestions.md)
+| [OOPS]()                                                                                                            | [Thread](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Thread.md)       | [Java8](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/java8.md) |
+|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| [Object & Class](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/ObjectAndClasses.md) | [Exception](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Exception.md) | []()                                                                                            |
+| [Polymorphism](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Polimorphism.md)       | [MISC](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Misc.md)           | []()                                                                                            |
+| [Inheritance](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Inheritance.md)         | []()                                                                                                    | []()                                                                                            |
+| [Interface](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Interface.md)             |                                                                                                         |                                                                                                 |
+| [Abstraction](https://github.com/siba-x-prasad/Java-Kotlin-Playground/blob/main/ReadMe/java/Abstraction.md)         |                                                                                                         |                                                                                                 |
