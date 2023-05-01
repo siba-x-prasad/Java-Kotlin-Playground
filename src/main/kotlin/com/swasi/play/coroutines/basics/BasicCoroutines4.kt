@@ -1,0 +1,25 @@
+package com.swasi.play.coroutines.basics
+
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+/**
+ * Created by Sibaprasad Mohanty on 01/05/2023.
+ * siba.x.prasad@gmail.com
+ */
+
+fun main() {
+    GlobalScope.launch { // launch a new coroutine in background and continue
+        delay(1000L)
+        println("World!")
+    }
+    println("Hello,") // main thread continues here immediately
+    runBlocking {     // but this expression blocks the main thread
+        println("runBlocking before Delay")
+        delay(5000L)  // ... while we delay for 2 seconds to keep JVM alive
+        println("runBlocking After Delay")
+    }
+    println("Siba")
+}

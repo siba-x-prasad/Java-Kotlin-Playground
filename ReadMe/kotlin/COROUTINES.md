@@ -9,7 +9,6 @@
 - We can run multiple methods at the same time with the help of Coroutines.
 
 ## Coroutines and Threads
-
 - Both are doing multitasking but Thread is handled by the system/os and the coroutines is handled
   by the User as it can execute a few lines of function by taking advantage of the cooperation.
 - It's an optimized framework written over the actual threading by taking advantage of the
@@ -18,24 +17,20 @@
 - A lightweight thread means it does not map on the native thread, so it does not require context
   switching on the processor, so they are faster.
 - Coroutines are available in many languages. It is of 2 types
-  -
-        1. Stack less
-    -
-        2. Stack full
-
+1. Stack less
+2. Stack full
 - Kotlin implements stackless coroutines — it’s mean that the coroutines don’t have own stack, so
   they don’t map on the native thread.
 
 ## NOTE
-
 - One can think of a coroutine as a light-weight thread.
 - Like threads, coroutines can run in parallel, wait for each other and communicate.
 - The biggest difference is that coroutines are very cheap, almost free: we can create thousands of
   them, and pay very little in terms of performance.
 - True threads, on the other hand, are expensive to start and keep around. A thousand threads can be
-  a serious challenge for a modern machine.**
+  a serious challenge for a modern machine.
 - They are lightweight because creating coroutines does not allocate new threads.
-- Instead, they use predefined thread pools, and smart scheduling.
+- Instead, they use predefined thread pools and smart scheduling.
 - Scheduling is the process of determining which piece of work you will execute next.
 - Just like a regular schedule.
 - **NOTE:** Additionally, coroutines can be suspended and resumed mid-execution.
@@ -46,14 +41,12 @@
 - You’ll just suspend some of them until the thread pool frees up.
 
 ## Thread Pool
-
 - Thread pool represents a group of worker threads that are waiting for the job and reused many
   times.
 - In the case of a thread pool, a group of fixed-size threads is created.
 - A thread from the thread pool is pulled out and assigned a job by the service provider.
 
 ## Definition of Coroutines :
-
 - A framework to manage concurrency in a more performant and simple way with its lightweight thread
   which is written on top of the actual threading framework to get the most out of it by taking the
   advantage of cooperative nature of functions.
@@ -63,25 +56,19 @@
 - https://kotlinlang.org/docs/reference/coroutines/basics.html
 
 ## Where we can use Coroutines
-
 - Let's take a simple example where we can
     - 1.Fetch User from the server.
     - 2.Show the User in the UI.
 - When we will do any N/W operation in main thread it will show exception network on main thread. To
-  avoid that we can use use the below solutions
-    -
-        1. Call Back
-    -
-        2. Rx Java
-    -
-        3. Coroutines
-
+  avoid that we can use use the below solutions.
+    - 1. Call Back (It's complicated to handle the callbacks and not feasible to do in big project)
+    - 2. Rx Java (It's different technology and not aware of kotlin stuff)
+    - 3. Coroutines
 ## Basics Of Coroutines
-
-- coroutines are light-weight threads
+- Coroutines are light-weight threads
 - Thread is controlled by OS but coroutines controlled by user.
 - They are launched with launch coroutine builder in a context of some CoroutineScope.
-- **GlobalScope.launch {}** we are launching a new coroutine in the GlobalScope, meaning that the
+- **GlobalScope.launch{ }** we are launching a new coroutine in the GlobalScope, meaning that the
   lifetime of the new coroutine is limited only by the lifetime of the whole application.
 - **NOTE** Suspend functions are only allowed to be called from a coroutine or another suspend
   function
@@ -96,7 +83,6 @@ fun main() {
     Thread.sleep(2000L) // block main thread for 2 seconds to keep JVM alive
 }
 ```
-
 - OUT PUT of above code
 
 ```
@@ -122,7 +108,6 @@ fun main() {
     print("Siba")
 }
 ```
-
 - **runBlocking** is block the execution for 5 seconds above, after 5 second, siba will print in the
   above code snippet.
 - **GlobalScope.launch** is used to create coroutines in background
@@ -168,7 +153,6 @@ suspend fun fetchUser(): User {
 ```
 
 ## Let's Discuss the main keywords used above
-
 - **launch** is a coroutine builder.
 - It launches a new coroutine concurrently with the rest of the code, which continues to work
   independently.

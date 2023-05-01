@@ -11,20 +11,19 @@ import kotlinx.coroutines.runBlocking
  * siba.x.prasad@gmail.com
  */
 
-fun main() = runBlocking { // this: CoroutineScope
-    println("First line inside run blocking")
-//    launch { doWorld() }
-    doWorldWithoutSuspend()
-    println("Hello")
-
-
+fun main() { runBlocking { // this: CoroutineScope
+        println("First line inside run blocking")
+//        launch { doWorld() }
+        doWorldWithoutSuspend()
+        println("Hello")
+    }
 }
 
 // this is your first suspending function
 suspend fun doWorld() {
-    println("World!1")
+    println("Suspend World!1")
     delay(1000L)
-    println("World!")
+    println("Suspend World!")
 }
 
 fun doWorldWithoutSuspend() {
