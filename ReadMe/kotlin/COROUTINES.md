@@ -60,7 +60,7 @@
     - 1.Fetch User from the server.
     - 2.Show the User in the UI.
 - When we will do any N/W operation in main thread it will show exception network on main thread. To
-  avoid that we can use use the below solutions.
+  avoid that we can use the below solutions.
     - 1. Call Back (It's complicated to handle the callbacks and not feasible to do in big project)
     - 2. Rx Java (It's different technology and not aware of kotlin stuff)
     - 3. Coroutines
@@ -169,7 +169,7 @@ suspend fun fetchUser(): User {
   .
 - **runBlocking** is also a coroutine builder that bridges the non-coroutine world of a regular fun
   main() and
-- the code with coroutines inside of runBlocking { ... } curly braces.
+- the code with coroutines inside runBlocking { ... } curly braces.
 - This is highlighted in an IDE by this: CoroutineScope hint right after the runBlocking opening
   curly brace.
 - If you remove or forget runBlocking in this code, you'll get an error on the launch call, since
@@ -183,7 +183,6 @@ suspend fun fetchUser(): User {
 - Instead of returning a simple value, it also knows in which context the caller suspended it.
 - Using this, it can resume appropriately, when ready.
 - suspend function that could be started, paused and resume.
--
 
 ## CoroutineBuilders
 

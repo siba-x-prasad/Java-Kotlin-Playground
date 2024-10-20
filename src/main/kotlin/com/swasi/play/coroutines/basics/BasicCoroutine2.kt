@@ -1,10 +1,8 @@
 package com.swasi.play.coroutines.basics
 
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
+@OptIn(DelicateCoroutinesApi::class)
 fun main() {
     GlobalScope.launch { // launch a new coroutine in background and continue
         delay(1000L)
@@ -16,3 +14,9 @@ fun main() {
     }
     print("Siba")
 }
+// OUTPUT
+/**
+ * Hello,
+ * world!
+ * siba
+ */

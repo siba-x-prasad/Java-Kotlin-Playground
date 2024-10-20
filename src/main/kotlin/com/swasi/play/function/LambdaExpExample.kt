@@ -10,8 +10,11 @@ fun main(args: Array<String>) {
     val result3 = sum3(8, 9)
     println("Result of sum3 is $result3")
 
-    val result4 = sumAsString(4, 5)
+    val lengthOfString = lengthOfString("Sibaprasad")
+    println("Length of Sibaprasad is $lengthOfString")
 
+    val result4 = sumAsString(4, 5)
+    println("Sum of string as string $result4")
     val resultClassExtension = "Geeks".lambda4(50)
     print(resultClassExtension)
 
@@ -29,6 +32,7 @@ val sum1 = { a: Int, b: Int -> a + b }
 val sum2 = { a: Int, b: Int -> print("Sub of $a and $b is ${a + b}") }
 val sum3: (Int, Int) -> Int = { a, b -> a + b }
 val sum4 = { a: Int, b: Int -> a + b }
+val lengthOfString = { input1: String ->  input1.length}
 
 val sumAsString = { a: Int, b: Int ->
     val num = a + b

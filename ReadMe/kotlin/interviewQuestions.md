@@ -461,7 +461,6 @@ Hola
 39. What is the difference between launch/join and async/await in Kotlin coroutines?
 
 ## Coroutines Interview Questions
-
 - What is Coroutines ?
 - Difference between Coroutines and Thread ?
 - What is Suspend function in coroutines

@@ -1,9 +1,6 @@
 package com.swasi.play.coroutines.basics
 
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 
 /**
@@ -13,7 +10,7 @@ import kotlinx.coroutines.runBlocking
 
 fun main() { runBlocking { // this: CoroutineScope
         println("First line inside run blocking")
-//        launch { doWorld() }
+        launch { doWorld() }
         doWorldWithoutSuspend()
         println("Hello")
     }
@@ -26,6 +23,7 @@ suspend fun doWorld() {
     println("Suspend World!")
 }
 
+@OptIn(DelicateCoroutinesApi::class)
 fun doWorldWithoutSuspend() {
     GlobalScope.launch {
         println("World!1")

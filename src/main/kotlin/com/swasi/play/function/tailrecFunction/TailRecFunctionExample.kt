@@ -7,10 +7,9 @@ fun main(args: Array<String>) {
 }
 
 tailrec fun printFibonacciSeries(n:Int,a:BigInteger,b:BigInteger):BigInteger{
-    if(n==0){
+    if (n==0) {
         return b
-    }
-    else{
+    } else {
         return printFibonacciSeries(n-1,a+b,b)
     }
 

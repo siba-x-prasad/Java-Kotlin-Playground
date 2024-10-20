@@ -1,15 +1,13 @@
 package com.swasi.play.coroutines.basics
 
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 /**
  * Created by Sibaprasad Mohanty on 01/05/2023.
  * siba.x.prasad@gmail.com
  */
 
+@OptIn(DelicateCoroutinesApi::class)
 fun main() {
     GlobalScope.launch { // launch a new coroutine in background and continue
         delay(1000L)
