@@ -276,8 +276,13 @@ object Singleton
 14. What are coroutines in Kotlin?
 - Unlike many other languages with similar capabilities, async and await are not keywords in Kotlin and are not even part of its standard library.
 - kotlinx.coroutines is a rich library for coroutines developed by JetBrains. It contains a number of high-level coroutine-enabled primitives, including launch, async and others. Kotlin Coroutines give you an API to write your asynchronous code sequentially.
-- The documentation says Kotlin Coroutines are like lightweight threads. They are lightweight because creating coroutines doesn’t allocate new threads. Instead, they use predefined thread pools, and smart scheduling. Scheduling is the process of determining which piece of work you will execute next.
-- Additionally, coroutines can be suspended and resumed - -execution. This means you can have a long-running task, which you can execute little-by-little. You can pause it any number of times, and resume it when you’re ready again.
+- The documentation says Kotlin Coroutines are like lightweight threads. 
+- They are lightweight because creating coroutines doesn’t allocate new threads. 
+- Instead, they use predefined thread pools, and smart scheduling. 
+- Scheduling is the process of determining which piece of work you will execute next.
+- Additionally, coroutines can be suspended and resumed - -execution. 
+- This means you can have a long-running task, which you can execute little-by-little. 
+- You can pause it any number of times, and resume it when you’re ready again.
 
 15. What are the advantages of Kotlin over Java?
 - Basically for me less thinking required to write kotlin equivalent to most java code:

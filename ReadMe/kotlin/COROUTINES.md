@@ -288,8 +288,8 @@ GlobalScope.launch(Dispatchers.Main) {
 }       
 ```
 
-- Here **fetchAndShowUser()** is a suspend com.swasi.play.function where we do the network operation
-  and after getting the result we delever the result in the main thread.
+- Here **fetchAndShowUser()** is a suspend function where we do the network operation
+  and after getting the result we deliver the result in the main thread.
 - showUser will run on UI thread because we have used the Dispatchers.Main to launch it.
 
 There are two functions in Kotlin to start the coroutines which are as follows:
@@ -301,7 +301,7 @@ There are two functions in Kotlin to start the coroutines which are as follows:
 **Launch vs Async in Kotlin Coroutines**
 
 The difference is that the launch{} does not return anything and the async{}returns an instance of
-Deferred<T>, which has an await()com.swasi.play.function that returns the result of the coroutine
+Deferred<T>, which has an await() function that returns the result of the coroutine
 like we have future in Java in which we do future.get() to the get the result.
 
 ```
@@ -336,10 +336,8 @@ fun fetchSeconeUser(): User {
 }  
 ```  
 
-No need to make the above functions as suspend as we are not calling any other suspend
-com.swasi.play.function from them.
-
-Now, we can use the async like below:
+- No need to make the above functions as suspend as we are not calling any other suspend  function from them.
+- Now, we can use the async like below:
 
 ```  
 GlobalScope.launch(Dispatchers.Main) {  
