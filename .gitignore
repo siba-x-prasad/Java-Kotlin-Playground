@@ -2,6 +2,8 @@
 # 🌱 SPRING BOOT / JAVA .GITIGNORE TEMPLATE
 # ==========================================
 
+out/production/JavaKotlinPlayground/
+
 # Compiled class files
 *.class
 *.war
