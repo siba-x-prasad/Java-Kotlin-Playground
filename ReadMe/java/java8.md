@@ -27,7 +27,7 @@
 
 - Lambda expression provides implementation of functional interface.
 - An interface which has only one abstract method is called functional interface.
-- Java provides an anotation @FunctionalInterface, which is used to declare an interface as
+- Java provides an annotation @FunctionalInterface, which is used to declare an interface as
   functional interface.
 
 ## Why use Lambda Expression
@@ -137,3 +137,148 @@ public class MethodReference {
     }  
 }  
 ```
+
+# Java 8 Features
+
+Java 8, released in March 2014, introduced major language enhancements and API changes. It brought functional programming features, new APIs, and improvements to concurrency and performance. This README lists the key features of Java 8 along with brief introductions and examples.
+
+---
+
+## 1. Lambda Expressions
+
+* Enable passing behavior (functions) as parameters.
+* Makes code concise and readable.
+
+```
+List<String> names = Arrays.asList("John", "Jane", "Jack");
+names.forEach(name -> System.out.println(name));
+```
+
+---
+
+## 2. Functional Interfaces
+
+* Interfaces with a single abstract method (SAM) used with lambda expressions.
+* Can be annotated with `@FunctionalInterface`.
+
+```
+@FunctionalInterface
+interface Calculator {
+    int add(int a, int b);
+}
+
+Calculator calc = (a, b) -> a + b;
+System.out.println(calc.add(5, 3));
+```
+
+---
+
+## 3. Streams API
+
+* Provides a functional approach to process collections of objects.
+* Supports operations like `map`, `filter`, `reduce`.
+
+```
+List<Integer> numbers = Arrays.asList(1,2,3,4,5);
+int sum = numbers.stream()
+                 .filter(n -> n % 2 == 0)
+                 .mapToInt(Integer::intValue)
+                 .sum();
+System.out.println(sum); // 6
+```
+
+---
+
+## 4. Method References
+
+* Shorter way to refer to methods or constructors.
+
+```
+List<String> names = Arrays.asList("John", "Jane", "Jack");
+names.forEach(System.out::println);
+```
+
+---
+
+## 5. Default Methods in Interfaces
+
+* Interfaces can have methods with a default implementation.
+
+```
+interface Vehicle {
+    default void start() {
+        System.out.println("Vehicle started");
+    }
+}
+
+class Car implements Vehicle {}
+new Car().start(); // Vehicle started
+```
+
+---
+
+## 6. Optional Class
+
+* Helps to avoid `NullPointerException`.
+* Represents a value that may or may not be present.
+
+```
+Optional<String> name = Optional.ofNullable(null);
+System.out.println(name.orElse("Default Name"));
+```
+
+---
+
+## 7. New Date and Time API (java.time)
+
+* Provides immutable and thread-safe classes for date and time.
+
+```
+LocalDate today = LocalDate.now();
+LocalDate birthday = LocalDate.of(1990, Month.JANUARY, 1);
+Period age = Period.between(birthday, today);
+System.out.println(age.getYears());
+```
+
+---
+
+## 8. Nashorn JavaScript Engine
+
+* Allows embedding JavaScript code within Java applications.
+
+```
+ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
+engine.eval("print('Hello from JavaScript')");
+```
+
+---
+
+## 9. Parallel Streams
+
+* Stream API can run operations in parallel for performance improvements.
+
+```
+List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+int sum = numbers.parallelStream().filter(n -> n % 2 == 0).mapToInt(Integer::intValue).sum();
+System.out.println(sum);
+```
+
+---
+
+## 10. Collectors API
+
+* Supports aggregation operations on streams like `groupingBy`, `joining`, `partitioningBy`.
+
+```
+List<String> names = Arrays.asList("John", "Jane", "Jack");
+String result = names.stream().collect(Collectors.joining(", "));
+System.out.println(result); // John, Jane, Jack
+```
+
+
+## Summary
+* **Functional programming:** Lambda expressions, Streams API, Method references
+* **Better API for collections and data:** Optional, Collectors
+* **Immutable and thread-safe date-time handling:** java.time
+* **Improved interface flexibility:** Default and static methods
+* **Parallel processing:** Parallel Streams

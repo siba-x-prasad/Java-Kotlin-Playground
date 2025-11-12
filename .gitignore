@@ -1,0 +1,85 @@
+# ==========================================
+# 🌱 SPRING BOOT / JAVA .GITIGNORE TEMPLATE
+# ==========================================
+
+# Compiled class files
+*.class
+*.war
+*.ear
+*.jar
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.zip
+*.tar.gz
+*.rar
+
+# IDE Directories
+### IntelliJ IDEA ###
+.idea/
+*.iml
+out/
+
+### Eclipse ###
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+.recommenders/
+
+### VS Code ###
+.vscode/
+
+# Build directories
+/target/
+/build/
+/out/
+/dist/
+
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Project-specific cache or generated files
+/.classpath
+/.project
+/.settings/
+/.gradle/
+/target/
+/logs/
+/tmp/
+/test-output/
+/MANIFEST.MF
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Environment and configuration files
+.env
+.env.*
+application-*.yml
+application-*.properties
+
+# Ignore node/npm if fron

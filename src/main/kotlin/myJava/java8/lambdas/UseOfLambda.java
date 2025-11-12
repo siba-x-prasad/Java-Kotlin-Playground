@@ -26,7 +26,7 @@ public class UseOfLambda {
         lf.printAge(23);
 
         System.out.println("Lambda with Return type");
-        LambdaWithReturntype lambdaWithReturntype = (a, b) -> {
+        LambdaWithReturnType lambdaWithReturntype = (a, b) -> {
             System.out.println("Returning the sum of " + a + " And " + b);
             return a + b;
         };
