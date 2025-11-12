@@ -4,6 +4,7 @@
 - == is used for reference comparison, checking if two references point to the same object in memory.
 - .equals() is used for value comparison, checking if two objects are logically equivalent.
 - You should override .equals() and .hashCode() when you want to define a custom equality logic for your objects, especially when they are used in collections like HashMap or HashSet.
+
 2). Explain immutability in Java. How would you create a truly immutable class?
 - Immutability means that once an object is created, its state cannot be changed. To create a truly immutable class:
   - Declare the class as final to prevent subclassing.
@@ -11,11 +12,14 @@
   - Do not provide setter methods.
   - Ensure that any mutable objects passed to the constructor are cloned or copied.
   - Provide only getter methods that return copies of mutable objects.
+
 3). Can you describe the class loading process in Java?
+
 - The class loading process in Java involves three main steps:
   - Loading: The class loader reads the .class file and loads it into memory.
   - Linking: This step involves verification (checking the bytecode), preparation (allocating memory for static variables), and resolution (resolving symbolic references).
   - Initialization: The class is initialized by executing static initializers and static blocks.
+
 4). What is the difference between composition and inheritance? Which do you prefer and why?
 - Inheritance is a "is-a" relationship where a subclass inherits properties and behaviors from a superclass. 
 - Composition is a "has-a" relationship where a class contains references to other classes as its members.
